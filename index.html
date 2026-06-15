@@ -66,17 +66,20 @@ body{padding-top:66px !important;}
 .ptab .kind{white-space:nowrap;color:#A9B6D6;}
 .ptab .loc{color:#5d6b86;font-style:italic;background:#101A33;border-radius:5px;}
 .ptab .own{color:#8BC34A;font-weight:700;}
+#eb-ver{max-width:185px;}
+.eb-status{min-width:10px;}
 </style>
 </head>
 <body>
 <div id="editbar">
   <span class="eb-title">키노트 제작 스펙 v3.2 · 공유본</span>
-  <span class="eb-hint">상단 버튼으로 편집 · 저장 · 되돌리기</span>
+  <span class="eb-hint" id="eb-mode">불러오는 중…</span>
   <span class="eb-sp"></span>
   <button id="eb-edit" class="eb-btn">✏️ 편집</button>
   <button id="eb-save" class="eb-btn primary">💾 저장</button>
-  <button id="eb-revert" class="eb-btn">↩️ 원본으로</button>
-  <button id="eb-export" class="eb-btn">⬇️ HTML로 내보내기</button>
+  <select id="eb-ver" class="eb-btn" title="저장 버전 기록"><option value="">🕘 버전</option></select>
+  <button id="eb-revert" class="eb-btn">↩️ 이 버전으로</button>
+  <button id="eb-export" class="eb-btn">⬇️ 내보내기</button>
   <span id="eb-status" class="eb-status"></span>
 </div>
 <div class="wrap">
@@ -194,14 +197,14 @@ body{padding-top:66px !important;}
         <div class="vis">🖼 <b>공급 플로우</b>(한국 콘텐츠 제작→해외 대행사→현지 판매) + 약국탭 요청 메시지 인용 카드.</div>
         <div class="need">📦 약국탭 요청 메시지/메일 <b>캡처(익명처리)</b>, 공급 플로우 그래픽</div></div>
       <div class="card"><div class="id">S13</div><div class="ti">크리에이터가 자산</div><div class="hook">콘텐츠 사이클 설계 = 브랜드 생사</div>
-        <div class="vis">🖼 아노아·아비브 캠페인 비주얼 + "크리에이터=자산" + 콘텐츠 사이클 다이어그램.</div>
-        <div class="need">📦 아노아·아비브 캠페인 이미지(<b>승인분만</b>), 계약 사실관계 확정</div></div>
+        <div class="vis">🖼 아누아·아비브 캠페인 비주얼 + "크리에이터=자산" + 콘텐츠 사이클 다이어그램.</div>
+        <div class="need">📦 아누아·아비브 캠페인 이미지(<b>승인분만</b>), 계약 사실관계 확정</div></div>
       <div class="card"><div class="id">S14</div><div class="ti">AI 콘텐츠 지문</div><div class="hook">AI가 양산할수록 오리진이 차별화</div>
         <div class="vis">🖼 <b>AI 양산 더미</b>(비슷한 썸네일 무한반복) vs <b>오리진 '지문' 하나</b> 강조 대비.</div>
         <div class="need">📦 AI 양산 vs 오리진 대비 그래픽, "콘텐츠 지문" 컨셉 비주얼</div></div>
     </div>
   </div>
-  <div class="fix">🔴 <b>보완(최저점)</b> — <b>3장 밀도↑</b> → S13·S14 병합 고려. · 아노아·아비브 <b>사실관계 확정</b>. · S14 추상적 → 한 문장으로 못 박기.</div>
+  <div class="fix">🔴 <b>보완(최저점)</b> — <b>3장 밀도↑</b> → S13·S14 병합 고려. · 아누아·아비브 <b>사실관계 확정</b>. · S14 추상적 → 한 문장으로 못 박기.</div>
 
   <!-- 마무리 -->
   <div class="chapter">
@@ -221,7 +224,7 @@ body{padding-top:66px !important;}
     <h3>제작 우선순위</h3>
     <ul>
       <li>🟢 본인 자산 우선 — 동남아 공항 사진·올영 LA·유튜브 트래픽·약국탭 캡처 (실증=무기)</li>
-      <li>🔴 검증 후 게재 — 3.2배·26.4%·40%·관광순위·케데헌·아노아/아비브</li>
+      <li>🔴 검증 후 게재 — 3.2배·26.4%·40%·관광순위·케데헌·아누아/아비브</li>
       <li>⚠️ 저작권/승인 — 케데헌·셀럽·로고는 텍스트 또는 승인 비주얼만</li>
     </ul>
   </div>
@@ -237,7 +240,7 @@ body{padding-top:66px !important;}
       <tr><td>서울 4구 실사진 (명동·삼청·성수팝업·강남)</td><td class="sl">S10</td><td class="kind">📷 직접 촬영</td><td class="loc">— 경로 입력 —</td><td>4컷 · 코드 라벨용</td></tr>
       <tr><td>공항 카트·QR 목업/사진</td><td class="sl">S11</td><td class="kind">📷 / 🎨 목업</td><td class="loc">— 경로 입력 —</td><td>여정 사이클</td></tr>
       <tr><td>미국 약국탭 요청 메시지·메일 캡처</td><td class="sl">S12</td><td class="kind own">🟢 캡처(익명)</td><td class="loc">— 경로 입력 —</td><td>개인정보 마스킹</td></tr>
-      <tr><td>아노아·아비브 캠페인 이미지</td><td class="sl">S13</td><td class="kind">📷 승인분만</td><td class="loc">— 경로 입력 —</td><td>⚠️ 계약·승인 확인</td></tr>
+      <tr><td>아누아·아비브 캠페인 이미지</td><td class="sl">S13</td><td class="kind">📷 승인분만</td><td class="loc">— 경로 입력 —</td><td>⚠️ 계약·승인 확인</td></tr>
       <tr><td>로고: 올영·구글·유튜브·고대</td><td class="sl">S02</td><td class="kind">🎨 로고</td><td class="loc">— 경로 입력 —</td><td>⚠️ 승인분만</td></tr>
       <tr><td>논문 3편 표지·등재레터</td><td class="sl">S02</td><td class="kind own">🟢 캡처</td><td class="loc">— 경로 입력 —</td><td>크레덴셜</td></tr>
       <tr><td>틱톡샵·샤오홍슈·세포라/얼타 매대 화면</td><td class="sl">S04</td><td class="kind">🖥 캡처</td><td class="loc">— 경로 입력 —</td><td>유통 vs 콘텐츠 대비</td></tr>
@@ -250,20 +253,48 @@ body{padding-top:66px !important;}
 <script>
 (function(){
   var wrap=document.querySelector('.wrap');
-  var KEY='kbt_edits_v32';
-  function status(m,c){var s=document.getElementById('eb-status');if(!s)return;s.textContent=m||'';s.style.color=c||'#8BC34A';if(m){clearTimeout(s._t);s._t=setTimeout(function(){s.textContent='';},3000);}}
-  try{var saved=localStorage.getItem(KEY);if(saved){wrap.innerHTML=saved;status('✔ 저장된 수정본 불러옴');}}catch(e){}
-  var editing=false;var bEdit=document.getElementById('eb-edit');
-  bEdit.onclick=function(){editing=!editing;wrap.contentEditable=editing?'true':'false';wrap.classList.toggle('editing',editing);bEdit.classList.toggle('on',editing);bEdit.textContent=editing?'✏️ 편집 중':'✏️ 편집';status(editing?'편집 모드 — 원하는 곳을 클릭해 바로 수정':'편집 종료 — 잊지 말고 💾 저장');};
-  document.getElementById('eb-save').onclick=function(){try{localStorage.setItem(KEY,wrap.innerHTML);status('💾 저장됨 (이 브라우저)');}catch(e){status('저장 실패','#FF5252');}};
-  document.getElementById('eb-revert').onclick=function(){if(confirm('원본으로 되돌릴까요? 이 브라우저에 저장한 수정본이 삭제됩니다.')){localStorage.removeItem(KEY);location.reload();}};
+  var LKEY='kbt_edits_v32';
+  var shared=false, editing=false;
+  var bEdit=document.getElementById('eb-edit');
+  function status(m,c){var s=document.getElementById('eb-status');if(!s)return;s.textContent=m||'';s.style.color=c||'#8BC34A';if(m){clearTimeout(s._t);s._t=setTimeout(function(){s.textContent='';},3500);}}
+  function setMode(t,c){var e=document.getElementById('eb-mode');if(e){e.textContent=t;if(c)e.style.color=c;}}
+  function apply(h){if(h)wrap.innerHTML=h;}
+  fetch('/api/doc',{cache:'no-store'}).then(function(r){return r.ok?r.json():Promise.reject(r.status);})
+    .then(function(d){shared=true;if(d.html)apply(d.html);setMode('● 공유 저장 · 누구나 편집','#8BC34A');loadVersions();})
+    .catch(function(){shared=false;setMode('○ 오프라인(이 브라우저) 저장','#FFB300');try{var s=localStorage.getItem(LKEY);if(s)apply(s);}catch(e){}});
+  bEdit.onclick=function(){editing=!editing;wrap.contentEditable=editing?'true':'false';wrap.classList.toggle('editing',editing);bEdit.classList.toggle('on',editing);bEdit.textContent=editing?'✏️ 편집 중':'✏️ 편집';status(editing?'편집 모드 — 누구나 수정 후 💾 저장':'');};
+  document.getElementById('eb-save').onclick=function(){
+    var html=wrap.innerHTML;
+    if(shared){status('저장 중…','#9FB3C8');
+      fetch('/api/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({html:html})})
+        .then(function(r){return r.ok?r.json():Promise.reject(r);})
+        .then(function(){status('💾 저장됨 · 새 버전 생성(모두 공유)');loadVersions();})
+        .catch(function(){try{localStorage.setItem(LKEY,html);}catch(e){}status('서버 저장 실패 → 브라우저 임시저장','#FFB300');});
+    }else{try{localStorage.setItem(LKEY,html);status('💾 저장됨 (이 브라우저)');}catch(e){status('저장 실패','#FF5252');}}
+  };
+  function loadVersions(){
+    if(!shared)return;
+    fetch('/api/history',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+      var sel=document.getElementById('eb-ver');if(!sel)return;var vs=d.versions||[];sel.innerHTML='';
+      var h=document.createElement('option');h.value='';h.textContent='🕘 버전 '+vs.length+'개';sel.appendChild(h);
+      vs.forEach(function(v,i){var o=document.createElement('option');o.value=v.sha;var t=new Date(v.date);var lbl='v'+(vs.length-i)+' · '+t.toLocaleString('ko-KR',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});if(/되돌리기/.test(v.message))lbl+=' ↩';o.textContent=lbl;sel.appendChild(o);});
+    }).catch(function(){});
+  }
+  document.getElementById('eb-revert').onclick=function(){
+    if(!shared){if(confirm('원본으로 되돌릴까요? (이 브라우저 저장 삭제)')){localStorage.removeItem(LKEY);location.reload();}return;}
+    var sel=document.getElementById('eb-ver');var sha=sel?sel.value:'';
+    if(!sha){status('되돌릴 버전을 목록에서 고르세요','#FFB300');return;}
+    if(!confirm('선택한 버전으로 되돌릴까요? 현재 내용도 기록에 남아 안전합니다.'))return;
+    status('되돌리는 중…','#9FB3C8');
+    fetch('/api/revert',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sha:sha})})
+      .then(function(r){return r.ok?r.json():Promise.reject(r);})
+      .then(function(d){if(d.html)apply(d.html);status('↩️ 되돌렸습니다 · 새 버전 기록');loadVersions();})
+      .catch(function(){status('되돌리기 실패','#FF5252');});
+  };
   document.getElementById('eb-export').onclick=function(){
     if(editing){editing=false;wrap.contentEditable='false';wrap.classList.remove('editing');bEdit.classList.remove('on');bEdit.textContent='✏️ 편집';}
     var html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
-    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
-    var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='keynote_v2_수정본.html';
-    document.body.appendChild(a);a.click();a.remove();
-    status('⬇️ HTML 내보냄 — 이 파일을 공유하세요');
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='keynote_v2_수정본.html';document.body.appendChild(a);a.click();a.remove();status('⬇️ 내보냄');
   };
 })();
 </script>
