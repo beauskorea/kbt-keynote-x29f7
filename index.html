@@ -38,9 +38,34 @@
   .lines ul { list-style:none; display:flex; gap:9px; flex-wrap:wrap; }
   .lines li { background:#0E1532; border:1px solid #2C3A5C; padding:7px 13px; border-radius:20px; font-size:11.5px; }
   .foot { margin-top:14px; font-size:11px; color:#A9B6D6; text-align:right; }
+
+/* ---- editor toolbar ---- */
+#editbar{position:fixed;top:0;left:0;right:0;min-height:50px;display:flex;align-items:center;gap:8px;padding:7px 16px;background:#0a1228;border-bottom:1px solid #2C3A5C;z-index:9999;flex-wrap:wrap;}
+#editbar .eb-title{font-size:13px;color:#9FB3C8;font-weight:800;}
+#editbar .eb-hint{font-size:11px;color:#5d6b86;}
+#editbar .eb-sp{flex:1;}
+.eb-btn{background:#16203A;border:1px solid #2C3A5C;color:#EAF6FF;font-size:12.5px;font-weight:700;padding:8px 13px;border-radius:8px;cursor:pointer;font-family:inherit;}
+.eb-btn:hover{border-color:#39C5E0;}
+.eb-btn.primary{background:#184A91;border-color:#39C5E0;}
+.eb-btn.on{background:#39C5E0;color:#0E1532;border-color:#39C5E0;}
+.eb-status{font-size:12px;color:#8BC34A;font-weight:700;margin-left:2px;}
+body{padding-top:66px !important;}
+.wrap.editing [class]{}
+.wrap.editing{outline:2px dashed rgba(57,197,224,.35);outline-offset:8px;border-radius:8px;}
+[contenteditable]{outline:none;}
 </style>
 </head>
 <body>
+<div id="editbar">
+  <span class="eb-title">키노트 제작 스펙 v3.2 · 공유본</span>
+  <span class="eb-hint">상단 버튼으로 편집 · 저장 · 되돌리기</span>
+  <span class="eb-sp"></span>
+  <button id="eb-edit" class="eb-btn">✏️ 편집</button>
+  <button id="eb-save" class="eb-btn primary">💾 저장</button>
+  <button id="eb-revert" class="eb-btn">↩️ 원본으로</button>
+  <button id="eb-export" class="eb-btn">⬇️ HTML로 내보내기</button>
+  <span id="eb-status" class="eb-status"></span>
+</div>
 <div class="wrap">
   <h1>K-뷰티는 제품이 아니라 콘텐츠를 수출한다 <span class="sub">제작 스펙 v3.2 · 16장 · 약 23분</span><span class="total">종합 87점</span></h1>
 
@@ -190,5 +215,26 @@
 
   <div class="foot">파트: 도입88·본론1 90·본론2 89·본론3 87·본론4 86·본론5 85·마무리88 → 종합 87 · 16장</div>
 </div>
+
+<script>
+(function(){
+  var wrap=document.querySelector('.wrap');
+  var KEY='kbt_edits_v32';
+  function status(m,c){var s=document.getElementById('eb-status');if(!s)return;s.textContent=m||'';s.style.color=c||'#8BC34A';if(m){clearTimeout(s._t);s._t=setTimeout(function(){s.textContent='';},3000);}}
+  try{var saved=localStorage.getItem(KEY);if(saved){wrap.innerHTML=saved;status('✔ 저장된 수정본 불러옴');}}catch(e){}
+  var editing=false;var bEdit=document.getElementById('eb-edit');
+  bEdit.onclick=function(){editing=!editing;wrap.contentEditable=editing?'true':'false';wrap.classList.toggle('editing',editing);bEdit.classList.toggle('on',editing);bEdit.textContent=editing?'✏️ 편집 중':'✏️ 편집';status(editing?'편집 모드 — 원하는 곳을 클릭해 바로 수정':'편집 종료 — 잊지 말고 💾 저장');};
+  document.getElementById('eb-save').onclick=function(){try{localStorage.setItem(KEY,wrap.innerHTML);status('💾 저장됨 (이 브라우저)');}catch(e){status('저장 실패','#FF5252');}};
+  document.getElementById('eb-revert').onclick=function(){if(confirm('원본으로 되돌릴까요? 이 브라우저에 저장한 수정본이 삭제됩니다.')){localStorage.removeItem(KEY);location.reload();}};
+  document.getElementById('eb-export').onclick=function(){
+    if(editing){editing=false;wrap.contentEditable='false';wrap.classList.remove('editing');bEdit.classList.remove('on');bEdit.textContent='✏️ 편집';}
+    var html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='keynote_v2_수정본.html';
+    document.body.appendChild(a);a.click();a.remove();
+    status('⬇️ HTML 내보냄 — 이 파일을 공유하세요');
+  };
+})();
+</script>
 </body>
 </html>
