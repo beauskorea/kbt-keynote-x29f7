@@ -78,6 +78,15 @@ body{padding-top:66px !important;}
 .assets .ai .loc{color:#5d6b86;font-style:italic;}
 .assets .ai .w{color:#FFB300;}
 .assets .none{font-size:11px;color:#6b7790;font-style:italic;}
+.card .point{font-size:10.5px;color:#FFD54F;line-height:1.45;margin-top:6px;padding-top:6px;border-top:1px dashed #4a4326;}
+.card .point b{color:#FFE082;}
+
+.card{position:relative;}
+.cardtool{position:absolute;top:5px;right:6px;gap:3px;display:none;}
+.wrap.editing .card .cardtool{display:inline-flex;}
+.cardtool button{background:#0E1532;border:1px solid #2C3A5C;color:#9FB3C8;font-size:10px;border-radius:5px;padding:2px 6px;margin-left:3px;cursor:pointer;font-family:inherit;}
+.cardtool button:hover{border-color:#39C5E0;color:#fff;}
+.cardtool .delb:hover{border-color:#FF5252;color:#FF8A80;}
 </style>
 </head>
 <body>
@@ -93,7 +102,7 @@ body{padding-top:66px !important;}
   <span id="eb-status" class="eb-status"></span>
 </div>
 <div class="wrap">
-  <h1>K-뷰티는 제품이 아니라 콘텐츠를 수출한다 <span class="sub">제작 스펙 v3.2 · 16장 · 약 23분</span><span class="total">종합 87점</span></h1>
+  <h1>K-뷰티는 제품이 아니라 콘텐츠를 수출한다 <span class="sub">제작 스펙 v3.2 · 17장 · 약 23분</span><span class="total">종합 87점</span></h1>
 
   <div class="legend">
     범례 — <span style="color:#9FE6F2">🖼 비주얼(어떤 그림)</span> · <span style="color:#8190AE">📦 필요 자료(준비물)</span> · <b style="color:#FF5252">🔴 빨강 = 보완점</b> · <b>★ 하이라이트</b>
@@ -105,10 +114,10 @@ body{padding-top:66px !important;}
     <div class="cards">
       <div class="card star"><div class="id">S01</div><div class="ti">타이틀 (도발)</div><div class="hook">K뷰티는 제품이 아니라, 콘텐츠를 수출한다</div>
         <div class="vis">🖼 <b>다크 풀스크린</b> + 대형 타이포(제목). 배경에 지구본+재생버튼/콘텐츠 아이콘이 한국으로 모이는 모티프. 2026.</div>
-        <div class="need">📦 제목 타이포, 다크 그래디언트, 콘텐츠 아이콘 셋</div></div>
+        <div class="need">📦 제목 타이포, 다크 그래디언트, 콘텐츠 아이콘 셋</div><div class="point">🎯 포인트: 첫 3초에 "콘텐츠를 수출한다" 한 문장만 꽂히게 — 카피 1줄·여백 위주, 이미지 최소</div></div>
       <div class="card"><div class="id">S02</div><div class="ti">문제제기 + 크레덴셜</div><div class="hook">무엇을 기준으로 잘된다고 말하고 계세요?</div>
         <div class="vis">🖼 좌: 옛 5지표(입점·매출·조회수·인플루언서·플랫폼) <b>흐릿한 체크리스트</b> → 우: 큰 물음표. 하단 크레덴셜 로고월 + 3.2배 미니 그래프.</div>
-        <div class="need">📦 올영·구글·유튜브·고대 로고(승인분만) / 논문 3편 표지·등재레터 캡처 / 4개월 3.2배 성장 그래프</div></div>
+        <div class="need">📦 올영·구글·유튜브·고대 로고(승인분만) / 논문 3편 표지·등재레터 캡처 / 4개월 3.2배 성장 그래프</div><div class="point">🎯 포인트: 옛 5지표는 <b>흐리게</b>, 물음표는 <b>선명하게</b> — 시선이 빈자리로 가게 대비</div></div>
     </div>
   </div>
   <div class="fix">🔴 <b>보완</b> — "4개월 3.2배" 정의/출처 고정. · "자랑 아니라 기준 제안" 호소 한 문장 또렷이.</div>
@@ -123,77 +132,80 @@ body{padding-top:66px !important;}
   <div class="chapter">
     <div class="chead"><div class="n">본론 1 · 기준</div><div class="t">세 가지를 겹쳐 본다</div><div class="time">5분</div><div class="score">90점</div></div>
     <div class="cards">
-      <div class="card"><div class="id">S03</div><div class="ti">① 소비력</div><div class="hook">관심은 인구·한류가, 매출은 소비력이 만든다</div>
+      <div class="card"><div class="id">S03</div><div class="ti">세 가지를 한눈에 (개요)</div><div class="hook">국가 수가 아니라, 시장이 움직이는 3개 렌즈로 본다</div>
+        <div class="vis">🖼 <b>3렌즈 한 장 지도</b> — 소비력·유통vs콘텐츠·언어낙수를 한 화면에 겹쳐, 뒤 3장(S04~S06)의 길잡이.</div>
+        <div class="need">📦 3렌즈 종합 다이어그램(디자인 제작)</div><div class="point">🎯 포인트: 3렌즈가 만나는 <b>교집합</b>을 강조 — "겹쳐 봐야 우선순위가 보인다"</div></div>
+      <div class="card"><div class="id">S04</div><div class="ti">① 소비력</div><div class="hook">관심은 인구·한류가, 매출은 소비력이 만든다</div>
         <div class="vis">🖼 <b>아시아 지도 소득 3단 색칠</b>(태국 기준선 강조) + 월급 막대(인니30·베트남40·태국100) + 대·홍·싱 핀 + 동남아 공항 광고 실사진.</div>
-        <div class="need">📦 아시아 소득 지도, 월급 막대그래프, <b>본인 촬영 동남아 공항 광고 사진</b>(실증)</div></div>
-      <div class="card"><div class="id">S04</div><div class="ti">② 유통 vs 콘텐츠</div><div class="hook">헤리티지 공룡 vs 콘텐츠 공룡</div>
+        <div class="need">📦 아시아 소득 지도, 월급 막대그래프, <b>본인 촬영 동남아 공항 광고 사진</b>(실증)</div><div class="point">🎯 포인트(사진): 동남아 공항 광고 <b>실사진=실증</b> — 현장감/날것 그대로, 보정 최소</div></div>
+      <div class="card"><div class="id">S05</div><div class="ti">② 유통 vs 콘텐츠</div><div class="hook">헤리티지 공룡 vs 콘텐츠 공룡</div>
         <div class="vis">🖼 <b>좌우 대결 구도</b> — 좌(유통: 세포라·얼타 매대) vs 우(콘텐츠: 틱톡샵·샤오홍슈 화면), 가운데 충돌. 올영 LA 패서디나 매장 실사진.</div>
-        <div class="need">📦 <b>올영 LA 매장 직접 촬영본(3월)</b>, 유통 vs 콘텐츠 대비 이미지 ⚠️수위조절</div></div>
-      <div class="card"><div class="id">S05</div><div class="ti">③ 언어 낙수효과</div><div class="hook">국경이 아니라 언어권을 타고 번진다</div>
+        <div class="need">📦 <b>올영 LA 매장 직접 촬영본(3월)</b>, 유통 vs 콘텐츠 대비 이미지 ⚠️수위조절</div><div class="point">🎯 포인트(사진): 올영 LA 매장은 좌우 대결의 <b>콘텐츠 쪽 앵커</b> — 붐비는 현장이 보이게(매대 수위조절)</div></div>
+      <div class="card"><div class="id">S06</div><div class="ti">③ 언어 낙수효과</div><div class="hook">국경이 아니라 언어권을 타고 번진다</div>
         <div class="vis">🖼 <b>세계지도 확산 화살표</b>(일→대→홍 / 미→영→프·스→벨→홍) + 유튜브 스튜디오 국가별 트래픽 표 캡처.</div>
-        <div class="need">📦 <b>유튜브 애널리틱스 국가별 스샷(130만 채널)</b>, 언어권 확산 지도, <b>키워드(네이밍) 로고타입</b></div></div>
+        <div class="need">📦 <b>유튜브 애널리틱스 국가별 스샷(130만 채널)</b>, 언어권 확산 지도, <b>키워드(네이밍) 로고타입</b></div><div class="point">🎯 포인트: 화살표가 국경이 아니라 <b>언어권</b>으로 번지게 — 유튜브 트래픽 캡처로 실데이터 뒷받침</div></div>
     </div>
   </div>
   <div class="fix">🔴 <b>보완</b> — ③ 언어낙수 <b>고유 키워드(이름) 필요</b>. · ② 올영 LA <b>수위 조절</b>. · 실증 데이터 <b>지도/표로</b>.</div>
 
   <div class="assets">
     <div class="ah">📸 이 파트 필요 사진 · 자료</div>
-    <div class="ai"><span class="s">S03</span> <span class="own">🟢</span> 동남아 공항 광고 사진(본인 촬영·실증) · <span class="loc">📁 위치 입력</span></div>
-    <div class="ai"><span class="s">S03</span> 아시아 소득 지도·월급 막대 (디자인 제작)</div>
-    <div class="ai"><span class="s">S04</span> <span class="own">🟢</span> 올영 LA 패서디나 매장 촬영(3월) <span class="w">⚠️수위조절</span> · <span class="loc">📁 위치 입력</span></div>
-    <div class="ai"><span class="s">S04</span> 틱톡샵·샤오홍슈·세포라/얼타 매대 화면 캡처 · <span class="loc">📁 위치 입력</span></div>
-    <div class="ai"><span class="s">S05</span> <span class="own">🟢</span> 유튜브 애널리틱스 국가별 스샷(130만 채널) · <span class="loc">📁 위치 입력</span></div>
-    <div class="ai"><span class="s">S05</span> 언어권 확산 지도·키워드 로고타입 (디자인 제작)</div>
+    <div class="ai"><span class="s">S04</span> <span class="own">🟢</span> 동남아 공항 광고 사진(본인 촬영·실증) · <span class="loc">📁 위치 입력</span></div>
+    <div class="ai"><span class="s">S04</span> 아시아 소득 지도·월급 막대 (디자인 제작)</div>
+    <div class="ai"><span class="s">S05</span> <span class="own">🟢</span> 올영 LA 패서디나 매장 촬영(3월) <span class="w">⚠️수위조절</span> · <span class="loc">📁 위치 입력</span></div>
+    <div class="ai"><span class="s">S05</span> 틱톡샵·샤오홍슈·세포라/얼타 매대 화면 캡처 · <span class="loc">📁 위치 입력</span></div>
+    <div class="ai"><span class="s">S06</span> <span class="own">🟢</span> 유튜브 애널리틱스 국가별 스샷(130만 채널) · <span class="loc">📁 위치 입력</span></div>
+    <div class="ai"><span class="s">S06</span> 언어권 확산 지도·키워드 로고타입 (디자인 제작)</div>
   </div>
   <!-- 본론2 -->
   <div class="chapter">
     <div class="chead"><div class="n">본론 2 · 판</div><div class="t">투트랙 + 데이터</div><div class="time">4분</div><div class="score">89점</div></div>
     <div class="cards">
-      <div class="card"><div class="id">S06</div><div class="ti">투트랙</div><div class="hook">한국을 떠나는 게 아니라, 돌아오게 만드는 것</div>
+      <div class="card"><div class="id">S07</div><div class="ti">투트랙</div><div class="hook">한국을 떠나는 게 아니라, 돌아오게 만드는 것</div>
         <div class="vis">🖼 <b>2레인 플로우</b> — 트랙1(해외→한국 화살표 회귀, 메인 뱃지) / 트랙2(한국→해외 직접, 보완). 공통 연료=한국 콘텐츠 라벨.</div>
-        <div class="need">📦 투트랙 다이어그램(메인/보완 뱃지)</div></div>
-      <div class="card star"><div class="id">S07</div><div class="ti">내부 데이터</div><div class="hook">경유지가 아니라 목적지 — 화살표가 한국으로</div>
+        <div class="need">📦 투트랙 다이어그램(메인/보완 뱃지)</div><div class="point">🎯 포인트: 트랙1(회귀 화살표)이 <b>메인</b>임을 색·굵기로, 트랙2는 보조로 톤다운</div></div>
+      <div class="card star"><div class="id">S08</div><div class="ti">내부 데이터</div><div class="hook">경유지가 아니라 목적지 — 화살표가 한국으로</div>
         <div class="vis">🖼 <b>도넛(국적 47/28/25)</b> + <b>가로막대(언어 58.5/31.6/9.8)</b>, 가운데 "≠ 분모 다름". 옆에 올영 1조 대형 숫자 + 세계지도 화살표 회귀.</div>
-        <div class="need">📦 자사 국적·언어 차트, 올영 5.7조/외국인1조/40% <b>출처 표기</b></div></div>
+        <div class="need">📦 자사 국적·언어 차트, 올영 5.7조/외국인1조/40% <b>출처 표기</b></div><div class="point">🎯 포인트: 도넛 vs 막대 <b>"≠ 분모 다름"</b>을 가운데 큼직하게 — 모순처럼 보이는 걸 한 번에 해소</div></div>
     </div>
   </div>
   <div class="fix">🔴 <b>보완</b> — <b>26.4% vs 25% 통일</b>. · "40% 중국인" <b>출처</b> 명시. · 분모 다름 <b>시각화</b>.</div>
 
   <div class="assets">
     <div class="ah">📸 이 파트 필요 사진 · 자료</div>
-    <div class="ai"><span class="s">S06</span> 투트랙 다이어그램 (디자인 제작)</div>
-    <div class="ai"><span class="s">S07</span> <span class="own">🟢</span> 자사 국적·언어 차트 + 올영 1조/40% <span class="w">출처 표기</span> · <span class="loc">📁 위치 입력</span></div>
+    <div class="ai"><span class="s">S07</span> 투트랙 다이어그램 (디자인 제작)</div>
+    <div class="ai"><span class="s">S08</span> <span class="own">🟢</span> 자사 국적·언어 차트 + 올영 1조/40% <span class="w">출처 표기</span> · <span class="loc">📁 위치 입력</span></div>
   </div>
   <!-- 본론3 -->
   <div class="chapter">
     <div class="chead"><div class="n">본론 3 · 왜 한국</div><div class="t">오리진</div><div class="time">3분</div><div class="score">87점</div></div>
     <div class="cards">
-      <div class="card"><div class="id">S08</div><div class="ti">헤리티지 제로</div><div class="hook">역사 제로에서 콘텐츠로 올라온 유일한 나라</div>
+      <div class="card"><div class="id">S09</div><div class="ti">헤리티지 제로</div><div class="hook">역사 제로에서 콘텐츠로 올라온 유일한 나라</div>
         <div class="vis">🖼 <b>관광객 순위 막대</b>(파리1억·미국8800만 … 한국 <b>급상승 화살표</b>) + "다 헤리티지 보유 / 한국만 제로→콘텐츠". 케데헌은 텍스트 언급.</div>
-        <div class="need">📦 관광객 순위 데이터·출처, 한국 급상승 그래프 (케데헌 이미지는 저작권 주의→텍스트로)</div></div>
-      <div class="card"><div class="id">S09</div><div class="ti">오리지널은 못 베낀다</div><div class="hook">제품·포맷·카피는 베껴도 오리진은 못 바꾼다</div>
+        <div class="need">📦 관광객 순위 데이터·출처, 한국 급상승 그래프 (케데헌 이미지는 저작권 주의→텍스트로)</div><div class="point">🎯 포인트: 한국만 <b>제로→급상승</b> 화살표를 색으로 튀게 — 케데헌은 이미지 말고 텍스트(저작권)</div></div>
+      <div class="card"><div class="id">S10</div><div class="ti">오리지널은 못 베낀다</div><div class="hook">제품·포맷·카피는 베껴도 오리진은 못 바꾼다</div>
         <div class="vis">🖼 <b>4단 체크</b> — 제품✅복제 / 포맷✅복제 / 카피✅복제 / <b>오리진 ✕복제불가</b>. + "콘텐츠 피로도 → 오리진 수요" 화살표.</div>
-        <div class="need">📦 복제 가능/불가 대비 그래픽</div></div>
+        <div class="need">📦 복제 가능/불가 대비 그래픽</div><div class="point">🎯 포인트: 제품/포맷/카피 ✅ vs <b>오리진 ✕</b> — ✕ 하나만 빨강으로 시선 집중</div></div>
     </div>
   </div>
-  <div class="fix">🔴 <b>보완</b> — 관광순위 <b>출처</b>·케데헌 <b>'소니 제작' 표현 정확도</b> 확인. · S09 비어 보임 → 비주얼 강화 or S08과 묶기.</div>
+  <div class="fix">🔴 <b>보완</b> — 관광순위 <b>출처</b>·케데헌 <b>'소니 제작' 표현 정확도</b> 확인. · S10 비어 보임 → 비주얼 강화 or S08과 묶기.</div>
 
   <div class="assets">
     <div class="ah">📸 이 파트 필요 사진 · 자료</div>
-    <div class="ai"><span class="s">S08</span> 관광객 순위 데이터·출처 + 한국 급상승 그래프 (데이터→디자인)</div>
-    <div class="ai"><span class="s">S08</span> <span class="w">⚠️</span> 케데헌은 이미지 대신 <b>텍스트 언급</b>(저작권)</div>
-    <div class="ai"><span class="s">S09</span> 복제 가능/불가 대비 그래픽 (디자인 제작)</div>
+    <div class="ai"><span class="s">S09</span> 관광객 순위 데이터·출처 + 한국 급상승 그래프 (데이터→디자인)</div>
+    <div class="ai"><span class="s">S09</span> <span class="w">⚠️</span> 케데헌은 이미지 대신 <b>텍스트 언급</b>(저작권)</div>
+    <div class="ai"><span class="s">S10</span> 복제 가능/불가 대비 그래픽 (디자인 제작)</div>
   </div>
   <!-- 본론4 -->
   <div class="chapter">
     <div class="chead"><div class="n">본론 4 · 서울</div><div class="t">오리진의 무대</div><div class="time">3분</div><div class="score">86점</div></div>
     <div class="cards">
-      <div class="card"><div class="id">S10</div><div class="ti">서울 4구 코드</div><div class="hook">KBT의 근간은 다시 지역 기반 오리진</div>
+      <div class="card"><div class="id">S11</div><div class="ti">서울 4구 코드</div><div class="hook">KBT의 근간은 다시 지역 기반 오리진</div>
         <div class="vis">🖼 <b>서울 지도에 4구 핀</b>(중구·종로·성수·강남) + 각 구 대표 실사진 + 코드 라벨(로컬/컬처/트렌디/랜드마크). 설문 200명 미니 차트.</div>
-        <div class="need">📦 서울 지도, 4구 실사진(명동·삼청·성수팝업·강남), <b>설문 200명·카드 동선 그래프</b></div></div>
-      <div class="card"><div class="id">S11</div><div class="ti">여행 전·중·후 리턴</div><div class="hook">여정 전체가 콘텐츠 — 누가 사이클로 만드나</div>
+        <div class="need">📦 서울 지도, 4구 실사진(명동·삼청·성수팝업·강남), <b>설문 200명·카드 동선 그래프</b></div><div class="point">🎯 포인트(사진): 4구 실사진이 각 코드(로컬/컬처/트렌디/랜드마크)로 <b>한눈에 다르게</b> — 성수컷이 가장 트렌디하게</div></div>
+      <div class="card"><div class="id">S12</div><div class="ti">여행 전·중·후 리턴</div><div class="hook">여정 전체가 콘텐츠 — 누가 사이클로 만드나</div>
         <div class="vis">🖼 <b>원형 사이클</b>(전→중→후 리턴) + 공항 카트 QR 목업 + 성수 3개관 투어 동선 지도.</div>
-        <div class="need">📦 여정 사이클 다이어그램, 공항 카트/QR 목업, 성수 매장 컨셉(="기획"으로 표기)</div></div>
+        <div class="need">📦 여정 사이클 다이어그램, 공항 카트/QR 목업, 성수 매장 컨셉(="기획"으로 표기)</div><div class="point">🎯 포인트: 원형 사이클에서 <b>리턴(후)</b> 구간 강조 — "떠난 뒤 콘텐츠가 더 커진다"</div></div>
     </div>
   </div>
   <div style="margin:0 0 8px 152px; display:flex; gap:8px; flex-wrap:wrap;">
@@ -227,44 +239,44 @@ body{padding-top:66px !important;}
 
   <div class="assets">
     <div class="ah">📸 이 파트 필요 사진 · 자료</div>
-    <div class="ai"><span class="s">S10</span> 📷 서울 4구 실사진 4컷(명동·삼청·성수팝업·강남) · <span class="loc">📁 위치 입력</span></div>
-    <div class="ai"><span class="s">S10</span> 서울 지도 + 설문 200명 차트 (디자인 제작)</div>
-    <div class="ai"><span class="s">S11</span> 공항 카트·QR 목업 + 성수 투어 동선 (목업/디자인)</div>
+    <div class="ai"><span class="s">S11</span> 📷 서울 4구 실사진 4컷(명동·삼청·성수팝업·강남) · <span class="loc">📁 위치 입력</span></div>
+    <div class="ai"><span class="s">S11</span> 서울 지도 + 설문 200명 차트 (디자인 제작)</div>
+    <div class="ai"><span class="s">S12</span> 공항 카트·QR 목업 + 성수 투어 동선 (목업/디자인)</div>
   </div>
   <!-- 본론5 -->
   <div class="chapter">
     <div class="chead"><div class="n">본론 5 · 수출</div><div class="t">그래서 우리가 한다</div><div class="time">4.5분</div><div class="score">85점</div></div>
     <div class="cards">
-      <div class="card star"><div class="id">S12</div><div class="ti">우리는 콘텐츠를 수출한다</div><div class="hook">콘텐츠는 소멸한다 — 누가 사이클을 설계하나</div>
+      <div class="card star"><div class="id">S13</div><div class="ti">우리는 콘텐츠를 수출한다</div><div class="hook">콘텐츠는 소멸한다 — 누가 사이클을 설계하나</div>
         <div class="vis">🖼 <b>공급 플로우</b>(한국 콘텐츠 제작→해외 대행사→현지 판매) + 약국탭 요청 메시지 인용 카드.</div>
-        <div class="need">📦 약국탭 요청 메시지/메일 <b>캡처(익명처리)</b>, 공급 플로우 그래픽</div></div>
-      <div class="card"><div class="id">S13</div><div class="ti">크리에이터가 자산</div><div class="hook">콘텐츠 사이클 설계 = 브랜드 생사</div>
+        <div class="need">📦 약국탭 요청 메시지/메일 <b>캡처(익명처리)</b>, 공급 플로우 그래픽</div><div class="point">🎯 포인트(캡처): 약국탭 요청 메시지 <b>실캡처가 핵심 증거</b> — 익명처리하되 "한국 콘텐츠 보내달라" 문구는 살리기</div></div>
+      <div class="card"><div class="id">S14</div><div class="ti">크리에이터가 자산</div><div class="hook">콘텐츠 사이클 설계 = 브랜드 생사</div>
         <div class="vis">🖼 아누아·아비브 캠페인 비주얼 + "크리에이터=자산" + 콘텐츠 사이클 다이어그램.</div>
-        <div class="need">📦 아누아·아비브 캠페인 이미지(<b>승인분만</b>), 계약 사실관계 확정</div></div>
-      <div class="card"><div class="id">S14</div><div class="ti">AI 콘텐츠 지문</div><div class="hook">AI가 양산할수록 오리진이 차별화</div>
+        <div class="need">📦 아누아·아비브 캠페인 이미지(<b>승인분만</b>), 계약 사실관계 확정</div><div class="point">🎯 포인트(사진): 아누아·아비브 비주얼로 <b>크리에이터=자산</b> 증명 — 승인분만</div></div>
+      <div class="card"><div class="id">S15</div><div class="ti">AI 콘텐츠 지문</div><div class="hook">AI가 양산할수록 오리진이 차별화</div>
         <div class="vis">🖼 <b>AI 양산 더미</b>(비슷한 썸네일 무한반복) vs <b>오리진 '지문' 하나</b> 강조 대비.</div>
-        <div class="need">📦 AI 양산 vs 오리진 대비 그래픽, "콘텐츠 지문" 컨셉 비주얼</div></div>
+        <div class="need">📦 AI 양산 vs 오리진 대비 그래픽, "콘텐츠 지문" 컨셉 비주얼</div><div class="point">🎯 포인트: AI 양산 더미(반복 썸네일) vs <b>오리진 1컷</b> 대비 — 지문이 유일하게 다름을 시각화</div></div>
     </div>
   </div>
-  <div class="fix">🔴 <b>보완(최저점)</b> — <b>3장 밀도↑</b> → S13·S14 병합 고려. · 아누아·아비브 <b>사실관계 확정</b>. · S14 추상적 → 한 문장으로 못 박기.</div>
+  <div class="fix">🔴 <b>보완(최저점)</b> — <b>3장 밀도↑</b> → S14·S15 병합 고려. · 아누아·아비브 <b>사실관계 확정</b>. · S15 추상적 → 한 문장으로 못 박기.</div>
 
   <div class="assets">
     <div class="ah">📸 이 파트 필요 사진 · 자료</div>
-    <div class="ai"><span class="s">S12</span> <span class="own">🟢</span> 약국탭 요청 메시지·메일 캡처 <span class="w">(익명처리)</span> · <span class="loc">📁 위치 입력</span></div>
-    <div class="ai"><span class="s">S12</span> 공급 플로우 그래픽 (디자인 제작)</div>
-    <div class="ai"><span class="s">S13</span> 📷 아누아·아비브 캠페인 이미지 <span class="w">⚠️승인분만</span> · <span class="loc">📁 위치 입력</span></div>
-    <div class="ai"><span class="s">S14</span> AI 양산 vs 오리진 대비 그래픽 (디자인 제작)</div>
+    <div class="ai"><span class="s">S13</span> <span class="own">🟢</span> 약국탭 요청 메시지·메일 캡처 <span class="w">(익명처리)</span> · <span class="loc">📁 위치 입력</span></div>
+    <div class="ai"><span class="s">S13</span> 공급 플로우 그래픽 (디자인 제작)</div>
+    <div class="ai"><span class="s">S14</span> 📷 아누아·아비브 캠페인 이미지 <span class="w">⚠️승인분만</span> · <span class="loc">📁 위치 입력</span></div>
+    <div class="ai"><span class="s">S15</span> AI 양산 vs 오리진 대비 그래픽 (디자인 제작)</div>
   </div>
   <!-- 마무리 -->
   <div class="chapter">
     <div class="chead"><div class="n">마무리</div><div class="t">결론 · 클로징</div><div class="time">2.5분</div><div class="score">88점</div></div>
     <div class="cards">
-      <div class="card"><div class="id">S15</div><div class="ti">결론</div><div class="hook">KBT는 아직 가장 저점이다 — 시작조차 안 됐다</div>
+      <div class="card"><div class="id">S16</div><div class="ti">결론</div><div class="hook">KBT는 아직 가장 저점이다 — 시작조차 안 됐다</div>
         <div class="vis">🖼 다크 + <b>저점에서 우상향하는 곡선</b>(현재 위치=저점 강조). "지금이 기회".</div>
-        <div class="need">📦 성장 곡선(저점 마커)</div></div>
-      <div class="card"><div class="id">S16</div><div class="ti">클로징 (명언)</div><div class="hook">다음 수출품은 제품이 아니라, 한국에서만 만들어지는 경험</div>
+        <div class="need">📦 성장 곡선(저점 마커)</div><div class="point">🎯 포인트: 저점→우상향 곡선에서 <b>현재=저점</b> 마커 강조 — "시작도 안 됐다"</div></div>
+      <div class="card"><div class="id">S17</div><div class="ti">클로징 (명언)</div><div class="hook">다음 수출품은 제품이 아니라, 한국에서만 만들어지는 경험</div>
         <div class="vis">🖼 다크 + <b>대형 낭독 타이포</b> + 언어 흐름 미니(中58.5→다31.6→영9.8). 시안 룰.</div>
-        <div class="need">📦 클로징 타이포, 언어 낙수 미니 비주얼</div></div>
+        <div class="need">📦 클로징 타이포, 언어 낙수 미니 비주얼</div><div class="point">🎯 포인트: 낭독 명언 1줄만 크게, 언어낙수 미니(中58.5→다31.6→영9.8)는 작게 받침</div></div>
     </div>
   </div>
   <div class="fix">🔴 <b>보완</b> — <b>청중 행동 한 줄</b>: "여러분 브랜드, 오늘 이 3렌즈로 자가진단 해보세요".</div>
@@ -283,7 +295,7 @@ body{padding-top:66px !important;}
     </ul>
   </div>
 
-  <div class="foot">파트: 도입88·본론1 90·본론2 89·본론3 87·본론4 86·본론5 85·마무리88 → 종합 87 · 16장</div>
+  <div class="foot">파트: 도입88·본론1 90·본론2 89·본론3 87·본론4 86·본론5 85·마무리88 → 종합 87 · 17장</div>
 </div>
 
 <script>
@@ -294,30 +306,55 @@ body{padding-top:66px !important;}
   var bEdit=document.getElementById('eb-edit');
   function status(m,c){var s=document.getElementById('eb-status');if(!s)return;s.textContent=m||'';s.style.color=c||'#8BC34A';if(m){clearTimeout(s._t);s._t=setTimeout(function(){s.textContent='';},4000);}}
   function setMode(t,c,click){var e=document.getElementById('eb-mode');if(!e)return;e.textContent=t;e.style.color=c||'#9FB3C8';e.style.cursor=click?'pointer':'default';e.style.textDecoration=click?'underline':'none';e.onclick=click||null;}
-  function apply(h){if(h)wrap.innerHTML=h;}
+
+  // ── 번호 자동 매김 ──
+  function renumber(){var i=0;document.querySelectorAll('.card .id').forEach(function(el){i++;el.textContent='S'+(i<10?'0'+i:i);});}
+  // ── 카드 도구(복제/삭제) ──
+  function injectTools(card){
+    if(card.querySelector(':scope > .cardtool'))return;
+    var t=document.createElement('div');t.className='cardtool';t.setAttribute('contenteditable','false');
+    t.innerHTML='<button class="dupb" title="복제">⧉</button><button class="delb" title="삭제">🗑</button>';
+    t.querySelector('.dupb').onclick=function(e){e.stopPropagation();var c=card.cloneNode(true);var ct=c.querySelector('.cardtool');if(ct)ct.remove();card.parentNode.insertBefore(c,card.nextSibling);injectTools(c);renumber();touch();status('⧉ 슬라이드 복제됨');};
+    t.querySelector('.delb').onclick=function(e){e.stopPropagation();if(confirm('이 슬라이드를 삭제할까요?')){card.remove();renumber();touch();status('🗑 슬라이드 삭제됨');}};
+    card.insertBefore(t,card.firstChild);
+  }
+  function injectAllTools(){document.querySelectorAll('.card').forEach(injectTools);}
+  function makeCard(){var d=document.createElement('div');d.className='card';d.innerHTML='<div class="id">S00</div><div class="ti">새 슬라이드</div><div class="hook">한 줄 메시지</div><div class="vis">🖼 비주얼 설명</div><div class="need">📦 필요 자료</div><div class="point">🎯 포인트</div>';return d;}
+  function currentCards(){var sel=window.getSelection();if(sel&&sel.anchorNode){var el=sel.anchorNode.nodeType===1?sel.anchorNode:sel.anchorNode.parentElement;var c=el&&el.closest?el.closest('.cards'):null;if(c)return c;}var all=document.querySelectorAll('.cards');return all[all.length-1];}
+
+  function cleanHTML(){var c=wrap.cloneNode(true);c.querySelectorAll('.cardtool').forEach(function(e){e.remove();});c.querySelectorAll('[contenteditable]').forEach(function(e){e.removeAttribute('contenteditable');});return c.innerHTML;}
+  function apply(h){if(h)wrap.innerHTML=h;renumber();injectAllTools();}
+  function touch(){dirty=true;if(editing){if(saveTimer)clearTimeout(saveTimer);saveTimer=setTimeout(function(){if(dirty)doSave(true);},4000);}}
+
   function refreshHistory(){
     return fetch('/api/history',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
       var sel=document.getElementById('eb-ver');var vs=d.versions||[];
       if(sel){sel.innerHTML='';var h=document.createElement('option');h.value='';h.textContent='🕘 버전 '+vs.length+'개';sel.appendChild(h);
         vs.forEach(function(v,i){var o=document.createElement('option');o.value=v.sha;var t=new Date(v.date);var lbl='v'+(vs.length-i)+' · '+t.toLocaleString('ko-KR',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});if(/되돌리기/.test(v.message))lbl+=' ↩';o.textContent=lbl;sel.appendChild(o);});}
-      if(vs.length)lastCommit=vs[0].sha;
-      return vs;
+      if(vs.length)lastCommit=vs[0].sha;return vs;
     });
   }
   fetch('/api/doc',{cache:'no-store'}).then(function(r){return r.ok?r.json():Promise.reject();})
-    .then(function(d){shared=true;if(d.html)apply(d.html);setMode('● 공유 저장 · 누구나 편집','#8BC34A');return refreshHistory();})
+    .then(function(d){shared=true;if(d.html){apply(d.html);}else{renumber();injectAllTools();}setMode('● 공유 저장 · 누구나 편집','#8BC34A');return refreshHistory();})
     .then(function(){startPoll();})
-    .catch(function(){shared=false;setMode('○ 오프라인(이 브라우저) 저장','#FFB300');try{var s=localStorage.getItem(LKEY);if(s)apply(s);}catch(e){}});
-  bEdit.onclick=function(){editing=!editing;wrap.contentEditable=editing?'true':'false';wrap.classList.toggle('editing',editing);bEdit.classList.toggle('on',editing);bEdit.textContent=editing?'✏️ 편집 중':'✏️ 편집';status(editing?'편집 모드 — 멈추면 자동 저장됩니다':'');};
-  wrap.addEventListener('input',function(){if(!editing)return;dirty=true;if(saveTimer)clearTimeout(saveTimer);saveTimer=setTimeout(function(){if(dirty)doSave(true);},4000);});
+    .catch(function(){shared=false;setMode('○ 오프라인(이 브라우저) 저장','#FFB300');try{var s=localStorage.getItem(LKEY);if(s)apply(s);else{renumber();injectAllTools();}}catch(e){renumber();injectAllTools();}});
+
+  bEdit.onclick=function(){editing=!editing;wrap.contentEditable=editing?'true':'false';wrap.classList.toggle('editing',editing);bEdit.classList.toggle('on',editing);bEdit.textContent=editing?'✏️ 편집 중':'✏️ 편집';status(editing?'편집 모드 — 카드 도구로 추가/삭제 · 멈추면 자동 저장':'');};
+  wrap.addEventListener('input',function(){if(!editing)return;touch();});
+
+  // ➕ 슬라이드 추가 버튼
+  var addBtn=document.createElement('button');addBtn.className='eb-btn';addBtn.id='eb-add';addBtn.textContent='➕ 슬라이드';
+  bEdit.parentNode.insertBefore(addBtn,document.getElementById('eb-save'));
+  addBtn.onclick=function(){if(!editing)bEdit.click();var cards=currentCards();var card=makeCard();cards.appendChild(card);injectTools(card);renumber();touch();card.scrollIntoView({behavior:'smooth',block:'center'});status('➕ 슬라이드 추가 — 내용 수정 후 저장');};
+
   function doSave(silent){
-    var html=wrap.innerHTML;
-    if(shared){ if(!silent)status('저장 중…','#9FB3C8');
+    var html=cleanHTML();
+    if(shared){if(!silent)status('저장 중…','#9FB3C8');
       return fetch('/api/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({html:html})})
         .then(function(r){return r.ok?r.json():Promise.reject();})
         .then(function(){dirty=false;status(silent?'💾 자동 저장됨 · 새 버전':'💾 저장됨 · 새 버전 생성');return refreshHistory();})
         .catch(function(){try{localStorage.setItem(LKEY,html);}catch(e){}status('서버 저장 실패 → 브라우저 임시저장','#FFB300');});
-    } else { try{localStorage.setItem(LKEY,html);dirty=false;status('💾 저장됨 (이 브라우저)');}catch(e){status('저장 실패','#FF5252');} }
+    } else {try{localStorage.setItem(LKEY,html);dirty=false;status('💾 저장됨 (이 브라우저)');}catch(e){status('저장 실패','#FF5252');}}
   }
   document.getElementById('eb-save').onclick=function(){doSave(false);};
   document.getElementById('eb-revert').onclick=function(){
@@ -328,31 +365,21 @@ body{padding-top:66px !important;}
     status('되돌리는 중…','#9FB3C8');
     fetch('/api/revert',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sha:sha})})
       .then(function(r){return r.ok?r.json():Promise.reject();})
-      .then(function(d){if(d.html)apply(d.html);status('↩️ 되돌렸습니다 · 이 변경도 버전에 기록');return refreshHistory();})
+      .then(function(d){if(d.html)apply(d.html);status('↩️ 되돌렸습니다 · 이 변경도 버전 기록');return refreshHistory();})
       .catch(function(){status('되돌리기 실패','#FF5252');});
   };
   document.getElementById('eb-export').onclick=function(){
     if(editing){editing=false;wrap.contentEditable='false';wrap.classList.remove('editing');bEdit.classList.remove('on');bEdit.textContent='✏️ 편집';}
-    var html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+    var html='<!DOCTYPE html>\n<html lang="ko"><head><meta charset="UTF-8">'+document.head.innerHTML+'</head><body>'+document.body.innerHTML.replace(/<div class="cardtool"[\s\S]*?<\/div>/g,'')+'</body></html>';
     var blob=new Blob([html],{type:'text/html;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='keynote_v2_수정본.html';document.body.appendChild(a);a.click();a.remove();status('⬇️ 내보냄');
   };
-  function startPoll(){
-    setInterval(function(){
-      if(!shared)return;
-      fetch('/api/history',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
-        var vs=d.versions||[];if(!vs.length)return;var top=vs[0].sha;
-        if(lastCommit && top!==lastCommit){
-          if(editing){status('⚠️ 다른 분이 새 버전 저장 — 편집 끝나고 불러오세요','#FFB300');}
-          else{setMode('🔄 새 버전 있음 · 클릭해 불러오기','#FFD54F',loadLatest);}
-        }
-      }).catch(function(){});
-    },15000);
-  }
-  function loadLatest(){
-    fetch('/api/doc',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
-      if(d.html)apply(d.html);setMode('● 공유 저장 · 누구나 편집','#8BC34A');status('🔄 최신본 불러옴');return refreshHistory();
+  function startPoll(){setInterval(function(){if(!shared)return;
+    fetch('/api/history',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+      var vs=d.versions||[];if(!vs.length)return;var top=vs[0].sha;
+      if(lastCommit&&top!==lastCommit){if(editing){status('⚠️ 다른 분이 새 버전 저장 — 편집 끝나고 불러오세요','#FFB300');}else{setMode('🔄 새 버전 있음 · 클릭해 불러오기','#FFD54F',loadLatest);}}
     }).catch(function(){});
-  }
+  },15000);}
+  function loadLatest(){fetch('/api/doc',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){if(d.html)apply(d.html);setMode('● 공유 저장 · 누구나 편집','#8BC34A');status('🔄 최신본 불러옴');return refreshHistory();}).catch(function(){});}
 })();
 </script>
 </body>
